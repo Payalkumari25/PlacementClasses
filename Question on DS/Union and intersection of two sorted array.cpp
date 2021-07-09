@@ -6,16 +6,15 @@ using namespace std;
 int main()
 {
 
-    int a[] = {1, 2, 3, 4, 5};
-    int b[] = {1, 2, 5};
+    int a[] = {1, 2, 2, 4, 5};
+    int b[] = {1, 2,2, 4, 5};
 
     int m = sizeof(a) / sizeof(a[0]);
     int n = sizeof(b) / sizeof(b[0]);
 
+    int res[n];
     int i = 0;
     int j = 0;
-    int res[n];
-    int k = 0;
     while (i < m && j < n)
     {
 
@@ -29,7 +28,7 @@ int main()
         }
         else
         {
-            cout << a[i]<<" ";
+            cout << a[i] << " ";
             i++;
             j++;
         }
